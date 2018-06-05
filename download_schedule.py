@@ -39,7 +39,7 @@ def jobTo():
 dateTime= datetime.now()+ timedelta(seconds=60)
 schTime= dateTime.strftime('%H:%M')
 print('Scheduled time to run the job is: ' + str(schTime))
-schedule.every().tuesday.at(schTime).do(jobTo)
+schedule.every().day.at(schTime).do(jobTo)
 #schedule.every(20).seconds.do(jobTo)
 #schedule.clear()
 
